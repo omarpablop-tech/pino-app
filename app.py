@@ -10,7 +10,7 @@ SPOTIFY_ID = "f15fc7dd7ef846259de5381b0ebfd2e9"
 SPOTIFY_SECRET = "508e9c33b093478da144c9c103f43332"
 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('models/gemini-1.5-flash')
 
 # Configuración Spotify
 auth_manager = SpotifyClientCredentials(client_id=SPOTIFY_ID, client_secret=SPOTIFY_SECRET)
