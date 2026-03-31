@@ -1,62 +1,57 @@
 import streamlit as st
 import google.generativeai as genai
 
-# 1. CONFIGURACIÓN DE OMAR
+# 1. EL "ADN" DE PINO PRODUCTIONS
 API_KEY = "AIzaSyB-5gXfxDOskyIQJBseXLRWhJ6JohZzVuA"
 genai.configure(api_key=API_KEY)
 
-# --- FUNCIÓN DE AUTO-DETECCIÓN (Para matar el error 404) ---
-@st.cache_resource
-def detectar_modelo():
-    try:
-        # Le pedimos a tu cuenta la lista de modelos que REALMENTE tenés
-        modelos_disponibles = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
-        # Prioridad para los modelos más modernos de 2026
-        for target in ['models/gemini-1.5-flash', 'models/gemini-1.5-pro', 'models/gemini-pro', 'models/gemini-1.0-pro']:
-            if target in modelos_disponibles:
-                return target
-        return modelos_disponibles[0] # Si no están los de arriba, usa el primero que encuentre
-    except Exception as e:
-        return f"Error al listar: {e}"
+# Aquí está el truco: sin el 'models/' adelante para que no tire error de formato
+model = genai.GenerativeModel('gemini-1.5-flash')
 
-modelo_final = detectar_modelo()
-model = genai.GenerativeModel(modelo_final)
+st.set_page_config(page_title="Pino AI", page_icon="🎧", layout="centered")
 
-# --- INTERFAZ ESTILO DJ / AITANA ---
-st.set_page_config(page_title="Pino AI", page_icon="🎧")
-st.markdown("<style>.stApp { background-color: #0e1117; color: white; }</style>", unsafe_allow_html=True)
+# Estilo Aitana Eventos (Dorado y Negro)
+st.markdown("""
+    <style>
+    .stApp { background-color: #0e1117; color: #ffffff; }
+    .stChatMessage { border-radius: 15px; border: 1px solid #d4af37; background-color: #1a1c23; }
+    </style>
+    """, unsafe_allow_html=True)
 
 st.title("🎧 Pino AI")
-st.caption(f"Modelo activo: {modelo_final}")
+st.subheader("Asistente Personal de Omar")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Mostrar chat
+# Historial de la charla
 for m in st.session_state.messages:
     with st.chat_message(m["role"]):
         st.markdown(m["content"])
 
-# --- CEREBRO EVOLUTIVO ---
+# 2. LÓGICA DE APRENDIZAJE
 if prompt := st.chat_input("¿Qué armamos hoy, Omar?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
     try:
-        # Tu ADN: Familia, Negocios y Trayectoria
+        # Tu contexto Maestro: Esto es lo que la IA "sabe" de vos
         contexto = (
-            "Eres el asistente personal de Omar, DJ con 20 años de trayectoria. "
-            "Su mujer es Romina y tienen dos hijos (18 y 7 años). "
-            "Maneja Aitana Eventos en La Plata y su marca Pino Productions. "
-            "Tu misión es aprender de él y evolucionar en cada charla."
+            "Actúa como el asistente personal de Omar, DJ con 20 años de experiencia. "
+            "Su mujer es Romina. Tienen dos hijos (uno de 18 y una de 7). "
+            "Es dueño de Aitana Eventos en La Plata y de la productora Pino Productions. "
+            "Él es de Villa Elisa. Sé profesional, creativo y recordá sus gustos musicales."
         )
         
-        response = model.generate_content(f"{contexto}\n\nPregunta: {prompt}")
+        # Petición limpia a la IA
+        full_query = f"{contexto}\n\nChat histórico:\n{st.session_state.messages}\n\nNueva pregunta: {prompt}"
+        response = model.generate_content(full_query)
         
         with st.chat_message("assistant"):
             st.markdown(response.text)
             st.session_state.messages.append({"role": "assistant", "content": response.text})
             
     except Exception as e:
-        st.error(f"Se cortó el cable: {e}")
+        st.error("Hubo un salto en el disco (Error de conexión).")
+        st.info(f"Detalle técnico para Omar: {e}")
