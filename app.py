@@ -1,16 +1,19 @@
 import streamlit as st
 import google.generativeai as genai
 
-# 1. IDENTIDAD Y LLAVE (OMAR)
+# 1. CONFIGURACIÓN (OMAR)
 API_KEY = "AIzaSyB-5gXfxDOskyIQJBseXLRWhJ6JohZzVuA"
 genai.configure(api_key=API_KEY)
 
-# Modelo ultra compatible
-model = genai.GenerativeModel('gemini-1.5-flash-latest') 
+# Probamos con el nombre estándar que es el más compatible
+try:
+    model = genai.GenerativeModel('gemini-1.5-flash')
+except:
+    model = genai.GenerativeModel('gemini-pro')
 
 st.set_page_config(page_title="Pino AI", page_icon="🎧")
 
-# Estilo visual DJ / Aitana Eventos
+# Estilo Aitana Eventos
 st.markdown("""
     <style>
     .stApp { background-color: #0e1117; color: white; }
@@ -19,26 +22,26 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("🎧 Pino AI")
-st.caption("Asistente Personal de Omar | Pino Productions")
+st.caption("Asistente de Omar | DJ & Eventos")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Mostrar historial de chat
 for m in st.session_state.messages:
     with st.chat_message(m["role"]):
         st.markdown(m["content"])
 
-# 2. LÓGICA DE APRENDIZAJE
+# 2. LÓGICA
 if prompt := st.chat_input("¿Qué armamos hoy, Omar?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
     try:
-        # Contexto fijo para que la IA siempre sepa quién sos
+        # Tu contexto de DJ y familia
         contexto = "Sos el asistente de Omar, DJ con 20 años de experiencia. Su mujer es Romina. Maneja Aitana Eventos y Pino Productions en La Plata."
         
+        # Intentar generar respuesta
         response = model.generate_content(f"{contexto}\n\nPregunta: {prompt}")
         
         with st.chat_message("assistant"):
@@ -46,4 +49,5 @@ if prompt := st.chat_input("¿Qué armamos hoy, Omar?"):
             st.session_state.messages.append({"role": "assistant", "content": response.text})
             
     except Exception as e:
-        st.error(f"Error: {e}")
+        st.error(f"Error de API: {e}")
+        st.info("Omar, si persiste el error, es probable que la API Key necesite un minuto para activarse.")
