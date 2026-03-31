@@ -1,13 +1,12 @@
 import streamlit as st
 import google.generativeai as genai
 
-# 1. CONFIGURACIÓN DE OMAR
-# Tu clave está perfecta, no la toques
+# 1. CONFIGURACIÓN DE OMAR (PINO PRODUCTIONS)
 API_KEY = "AIzaSyB-5gXfxDOskyIQJBseXLRWhJ6JohZzVuA"
 genai.configure(api_key=API_KEY)
 
-# USAMOS EL MODELO ESTÁNDAR "GEMINI-PRO" (EL MÁS COMPATIBLE)
-model = genai.GenerativeModel('gemini-pro')
+# ESTE ES EL MODELO MÁS COMPATIBLE EN 2026
+model = genai.GenerativeModel('gemini-1.5-flash-8b')
 
 st.set_page_config(page_title="Pino AI", page_icon="🎧")
 
@@ -20,7 +19,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("🎧 Pino AI")
-st.caption("Asistente de Omar | DJ & Eventos")
+st.caption("Asistente de Omar | Villa Elisa, La Plata")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -37,11 +36,16 @@ if prompt := st.chat_input("¿Qué armamos hoy, Omar?"):
         st.markdown(prompt)
 
     try:
-        # Contexto Maestro (Tu ADN de usuario)
-        contexto = "Sos el asistente de Omar, DJ con 20 años de experiencia. Su mujer es Romina. Maneja Aitana Eventos y Pino Productions en La Plata."
+        # Tu contexto de DJ y familia (Memoria de ADN)
+        contexto = (
+            "Sos el asistente personal de Omar. Omar es un DJ con 20 años de trayectoria. "
+            "Su mujer es Romina. Tienen dos hijos (18 y 7 años). "
+            "Es dueño de Aitana Eventos en La Plata y Pino Productions. "
+            "Respondé siempre de forma profesional pero cercana, como un colega."
+        )
         
-        # Generar respuesta con el modelo Pro
-        response = model.generate_content(f"{contexto}\n\nPregunta: {prompt}")
+        # Generar respuesta
+        response = model.generate_content(f"{contexto}\n\nPregunta de Omar: {prompt}")
         
         with st.chat_message("assistant"):
             st.markdown(response.text)
@@ -49,4 +53,4 @@ if prompt := st.chat_input("¿Qué armamos hoy, Omar?"):
             
     except Exception as e:
         st.error(f"Error detectado: {e}")
-        st.info("Omar, si dice 'Model not found', probá cambiar 'gemini-pro' por 'gemini-1.0-pro' en el código.")
+        st.info("Omar, si sigue el 404, cambiá 'gemini-1.5-flash-8b' por 'gemini-1.5-flash' a secas.")
