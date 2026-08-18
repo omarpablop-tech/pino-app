@@ -8,19 +8,50 @@
 
 ## 0. Nota metodológica
 
-`instagram.com` está bloqueado por la red de este entorno de trabajo (no es un tema del link en
-particular, es el dominio entero) — no puedo leer `@pino.productions.ar` ni aunque me pases la URL
-directa. Por buscador confirmé que **Aitana Eventos** (`@aitanaeventosok`) es una cuenta activa y
-real (~1.062 seguidores y 273 posts al momento de esta investigación), pero de
-`@pino.productions.ar` no encontré rastro indexado (normal en una cuenta chica/nueva). Todo lo que
-sigue está construido sobre lo que vos me contaste directamente, no sobre datos inventados de
-redes. **Foco del negocio:** toda la energía de este plan va a **Pino Productions**, que es la
-marca que hay que construir de cero. Aitana Eventos ya está posicionada y bien administrada por
-tu cuenta — acá aparece solo cuando suma como combo, nunca como algo que haya que arrancar.
+`instagram.com` está bloqueado por la red de este entorno de trabajo, así que no pude navegarlo
+yo mismo — pero Omar mandó capturas reales del perfil `@pino.productions.ar` y sus 5 posts, y esa
+es la fuente de todo lo que sigue (no hay datos inventados de redes). **Foco del negocio:** toda
+la energía de este plan va a **Pino Productions**. Aitana Eventos ya está posicionada y bien
+administrada por su cuenta — acá aparece solo cuando suma como combo, nunca como algo que haya que
+arrancar.
 
-Para que el Generador de Contenido de la app suene igual que tu cuenta real, pasame (texto o
-capturas) la bio actual de `@pino.productions.ar`, cuántos seguidores/posts tiene, y 3-4 posts
-recientes representativos. Con eso calibro tono, hashtags y el calendario de contenido.
+### Lo que muestran las capturas (relanzamiento reciente, no arranque de cero total)
+
+- **Perfil:** Producto/servicio · Creador(a) de IA. 5 publicaciones, 11 seguidores, 6 seguidos —
+  cuenta chica, consistente con un relanzamiento de marca muy reciente (el primer post con la
+  identidad nueva es del 4 de marzo de 2026).
+- **Bio actual:** "Pino Productions 🎛️ Sonido e Iluminación Premium · 💍 Bodas | 👑 15 Años | 🥂
+  Corporativos · 📍 La Plata, Vi[lla Elisa]..." con link directo a WhatsApp
+  (`wa.me/5492215078765`).
+- **Identidad visual:** logo minimalista blanco y negro (pino/pirámide escalonada), estética
+  premium — nada de "neón DJ genérico". Esto ya es una decisión de marca tomada, no algo a
+  definir.
+- **Posicionamiento de copy, ya en uso real** (no hay que inventarlo, hay que sostenerlo):
+  "diseñamos atmósferas que perduran", "el arquitecto de los mejores momentos", "la ingeniería
+  del momento perfecto", "la elegancia no solo se ve, se escucha". Tono premium/elegante, lejos
+  del genérico "fiesta y joda".
+- **Zona de cobertura declarada:** Villa Elisa, City Bell y La Plata (más amplia de lo que se
+  había asumido antes de ver las capturas).
+- **Ya hay cruce real con Aitana Eventos:** un reel usa el salón como locación de un evento de 15
+  ("la magia sutil en Aitana Eventos..."), y `@aitanaeventosok` le dio like a un post de Pino
+  Productions. El combo entre las dos marcas no es una idea a futuro: **ya está pasando
+  orgánicamente** y hay que sistematizarlo, no inventarlo.
+- **Ya se está generando contenido con IA:** dos de los cinco posts están etiquetados por la
+  propia cuenta como "Contenido generado con IA" (incluye video con marca de agua de Veo). Omar
+  ya viene experimentando con esto antes de pedirme ayuda — el rol de la app es reforzar y
+  sistematizar ese hábito, no reemplazarlo.
+- **Ya se está reclutando:** el post del 29 de marzo es una búsqueda activa de DJs freelance para
+  Villa Elisa y alrededores, con requisitos y beneficios bien definidos. Esto ya está alineado
+  con el plan de contratación de la sección 9 — no hace falta arrancarlo, hay que darle sistema
+  (ver comentario en esa sección).
+- **"Agenda 2026/2027 abierta"** ya aparece en el post de relanzamiento: la intención de vender
+  con anticipación ya está comunicada.
+
+**Conclusión revisada:** Pino Productions no arranca de cero en términos de posicionamiento — el
+posicionamiento premium/elegante, la zona de cobertura y el tono ya están definidos y publicados.
+Lo que falta no es "inventar la marca", es **sistema y volumen**: más contenido sostenido en el
+tiempo (5 posts en ~5 meses es muy poco), un cotizador y CRM para no perder consultas, y escalar
+lo que ya funciona (el combo con Aitana, la búsqueda de DJs, el contenido con IA).
 
 ---
 
@@ -28,8 +59,10 @@ recientes representativos. Con eso calibro tono, hashtags y el calendario de con
 
 **Lo que ya tenés (activos reales, sin haber invertido en armar "la empresa"):**
 
-- Marca + logo de Pino Productions.
-- Instagram propio (`@pino.productions.ar`).
+- Marca + logo de Pino Productions, con identidad visual y de copy ya definida (premium,
+  elegante, minimalista) y ya publicada.
+- Instagram propio (`@pino.productions.ar`), con bio, WhatsApp de contacto y posicionamiento
+  claros, aunque todavía con pocos posts y seguidores.
 - Equipo de sonido: 2 bafles de 15".
 - Set de luces.
 - PC para reproducir música (DJ set).
@@ -45,9 +78,9 @@ recientes representativos. Con eso calibro tono, hashtags y el calendario de con
 - Estructura de empresa formal (inscripción fiscal).
 - Catálogo de servicios y precios ordenados.
 - Un sistema (no memoria) para seguir consultas de clientes.
-- Contenido sistemático en redes, no esporádico.
-- Un "combo" de venta que una Pino Productions (producción/sonido/DJ/luces/proyección) con
-  Aitana Eventos (el salón), que hoy probablemente se venden por separado.
+- Contenido sistemático en redes, no esporádico (5 posts en varios meses no alcanza).
+- Formalizar como oferta el "combo" Pino Productions + Aitana Eventos que ya está pasando de
+  forma orgánica en redes.
 
 **Conclusión clave:** no estás arrancando de cero. Estás arrancando con activos físicos, un salón
 funcionando y experiencia — lo que falta es **sistema**. Ese es el foco de este plan.
@@ -120,8 +153,10 @@ corporativos chicos, cumpleaños infantiles.
 
 Los precios base son **editables por vos** en `config/precios.json` (los dejé con valores de
 ejemplo, no reales — actualizalos con tus números y revisalos seguido por la inflación).
-El **Cotizador** de la app calcula automáticamente combos con descuento y te redacta el mensaje
-de WhatsApp para el cliente.
+El **Cotizador** de la app calcula automáticamente combos con descuento, te redacta el mensaje
+de WhatsApp para el cliente y te arma un botón que abre la conversación directo con ese mensaje
+ya escrito. El contacto oficial que ya está en la bio del Instagram es `wa.me/5492215078765`
+— la app lo usa como referencia en todo el contenido que genera.
 
 ---
 
@@ -166,17 +201,27 @@ responder a mano.
 
 ## 6. Identidad de marca en redes (Pino Productions)
 
-Con el salón ya con buena base (Aitana Eventos, ~1000 seguidores), Pino Productions puede crecer
-más rápido apalancándose en esa audiencia. Acciones concretas:
+La identidad ya está definida y publicada — premium, elegante, minimalista, con frases propias
+("diseñamos atmósferas que perduran") — así que el trabajo acá **no es inventar un tono nuevo, es
+sostenerlo con más frecuencia**. El problema hoy no es de identidad, es de volumen: 5 posts desde
+marzo es muy poco para que el algoritmo de Instagram y los clientes potenciales noten la cuenta.
 
-- **Cruzar audiencias:** cada post de un evento en el salón, etiquetar/mencionar a Pino
-  Productions cuando fue el proveedor de sonido/DJ, y viceversa. Construye la asociación "estas
-  dos marcas trabajan juntas" en la cabeza del público sin gastar en pauta.
-- **Contenido recurrente** (usá el Generador de Contenido de la app): recap de evento, detrás de
-  escena armando el equipo, promoción de fechas libres, testimonios.
-- **Reels > fotos** para alcance orgánico: el armado del equipo, el momento en que se prende la
-  pista, timelapse del salón montado, son contenido nativo y gratuito.
-- **Un solo link en bio** (Linktree o similar, gratis) que lleve a WhatsApp y al catálogo/combo.
+- **No cambies el tono premium** al usar el Generador de Contenido de la app — ya está calibrado
+  con las frases y el estilo reales de la marca (lo configuré con tus capturas). Usalo, no lo
+  peleés.
+- **Cruzar audiencias con Aitana Eventos:** esto ya empezó solo (el reel de "magia sutil en
+  Aitana Eventos" y el like de `@aitanaeventosok`) — hazlo intencional: cada evento en el salón
+  con Pino Productions como sonido/DJ, mencionar a la otra cuenta en el post, de las dos partes.
+- **Subir la frecuencia** usando el calendario semanal de abajo — con contenido generado con IA
+  (que ya venís usando) más el que sale de eventos reales, es sostenible sin agregar carga de
+  trabajo grande.
+- **El post de búsqueda de DJs ya funciona como contenido** (mostrás que estás creciendo, no solo
+  que buscás gente) — repetilo cada vez que haya vacantes reales, no lo dejes como posteo único.
+- **Reels > fotos** para alcance orgánico: armado del equipo, el momento en que se prende la
+  pista, timelapse del salón montado.
+- El link de WhatsApp ya está en la bio (`wa.me/5492215078765`) — no hace falta un Linktree
+  todavía con 5 posts; se justifica cuando haya más de un destino a repartir (catálogo, portfolio,
+  reserva de fecha).
 
 ---
 
@@ -258,21 +303,31 @@ se paga **por evento, no en relación de dependencia**, como monotributistas ell
 evita cargas fijas antes de tener ingresos fijos. Recién pasás a planta permanente cuando la
 demanda es sostenida y previsible, no ocasional.
 
+**Nota sobre lo que ya hiciste:** el post del 29 de marzo buscando DJs freelance en Villa Elisa y
+alrededores ya es exactamente el primer paso de esta tabla — bien encarado (requisitos claros,
+beneficios claros). Dos ajustes para que rinda más:
+1. Repetilo periódicamente (no como post único) y también en grupos de Facebook/Instagram de
+   músicos y DJs de La Plata, no solo en tu propio feed con 11 seguidores.
+2. Definí de antemano el pago por evento para quien se sume, así en la primera charla con un
+   candidato no lo estás improvisando.
+
 ---
 
 ## 10. Checklist inmediato (próximas 2 semanas)
 
+- [x] Pasar la bio, seguidores/posts y posts recientes de `@pino.productions.ar` — hecho, el
+      Generador de Contenido ya está calibrado con la voz real de la marca (premium/elegante).
 - [ ] **Revocar y regenerar la API key de Gemini expuesta** en Google AI Studio (ver `README.md`).
-- [ ] Pasarme la bio, seguidores/posts y 3-4 posts recientes de `@pino.productions.ar` (texto o
-      capturas) para calibrar el Generador de Contenido con tu voz real de marca.
 - [ ] Cargar precios reales en `config/precios.json`.
 - [ ] Correr la app localmente o subirla gratis a Streamlit Community Cloud (instrucciones en
       `README.md`).
 - [ ] Cargar en el CRM (`pages/3`) todas las consultas de clientes de Pino Productions que tengas
       dando vueltas hoy en la cabeza o en WhatsApp, aunque sean viejas — para tener el embudo real
       desde el día uno.
-- [ ] Publicar el primer contenido sistemático en `@pino.productions.ar` generado con la app
-      (recap, detrás de escena, o promoción de fecha libre).
+- [ ] Usar el Generador de Contenido para armar 3-4 posts de una y programarlos, para pasar de
+      5 posts en 5 meses a un ritmo semanal real (ver calendario sugerido en la sección 6).
+- [ ] Repetir/ampliar la búsqueda de DJs (post del 29/3) en grupos de músicos de La Plata, no solo
+      en el propio feed.
 - [ ] Hablar con tu socio y dejar por escrito el reparto de costos/ganancias de la camioneta.
 - [ ] Monotributo: **sin apuro por ahora**, según definiste — retomalo cuando el resto esté
       funcionando y empieces a cobrar de forma regular (ver sección 2).

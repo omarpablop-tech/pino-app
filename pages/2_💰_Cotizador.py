@@ -1,5 +1,7 @@
 import json
+import re
 from pathlib import Path
+from urllib.parse import quote
 
 import streamlit as st
 
@@ -9,6 +11,21 @@ st.set_page_config(page_title="Cotizador | Pino AI", page_icon="💰", layout="w
 st.title("💰 Cotizador de Eventos")
 
 PRECIOS_PATH = Path(__file__).resolve().parent.parent / "config" / "precios.json"
+WHATSAPP_PINO = "5492215078765"
+
+
+def normalizar_telefono_ar(numero: str) -> str | None:
+    """Deja solo dígitos. Si no tiene código de país, asume Argentina (54 9)."""
+    digitos = re.sub(r"\D", "", numero or "")
+    if not digitos:
+        return None
+    if digitos.startswith("54"):
+        return digitos
+    if digitos.startswith("0"):
+        digitos = digitos[1:]
+    if digitos.startswith("15"):
+        digitos = digitos[2:]
+    return "549" + digitos
 
 
 def ar_money(valor: float) -> str:
@@ -32,6 +49,14 @@ with st.form("form_cotizacion"):
     col1, col2 = st.columns(2)
     with col1:
         nombre_cliente = st.text_input("Nombre del cliente")
+        telefono_cliente = st.text_input(
+            "WhatsApp del cliente (opcional)",
+            placeholder="Ej: 221 555-1234 (código de área sin 0, sin el 15)",
+            help=(
+                "Escribilo como código de área + número, sin el 0 inicial ni el 15 "
+                "(ej: un celu de La Plata sería 221 555-1234, no 0221 15 555-1234)."
+            ),
+        )
         tipo_evento = st.text_input("Tipo de evento", placeholder="Ej: cumpleaños 15, casamiento, corporativo")
     with col2:
         fecha_evento = st.date_input("Fecha del evento")
@@ -109,5 +134,15 @@ Tono cercano, profesional, cerrando con una pregunta para avanzar con la reserva
                     response = model.generate_content(prompt)
                     st.subheader("Mensaje sugerido para WhatsApp")
                     st.code(response.text, language=None)
+
+                    numero_destino = normalizar_telefono_ar(telefono_cliente)
+                    if numero_destino:
+                        link = f"https://wa.me/{numero_destino}?text={quote(response.text)}"
+                        st.link_button("📲 Abrir WhatsApp con este mensaje", link)
+                    else:
+                        st.caption(
+                            "Cargá el WhatsApp del cliente arriba para generar un botón que "
+                            "abra la conversación con este mensaje ya escrito."
+                        )
                 except Exception as e:
                     st.error(f"No se pudo generar el mensaje: {e}")
