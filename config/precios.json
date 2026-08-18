@@ -1,0 +1,37 @@
+{
+  "moneda": "ARS",
+  "nota": "PRECIOS DE EJEMPLO. Editá estos valores en config/precios.json con tus precios reales. Argentina tiene inflación alta: revisalos seguido.",
+  "servicios": {
+    "dj_sonido_basico": {
+      "nombre": "DJ + Sonido (2 bafles 15\\\")",
+      "precio_base": 150000,
+      "unidad": "evento (hasta 4 hs)"
+    },
+    "hora_extra": {
+      "nombre": "Hora extra de servicio",
+      "precio_base": 20000,
+      "unidad": "hora"
+    },
+    "iluminacion": {
+      "nombre": "Set de luces",
+      "precio_base": 40000,
+      "unidad": "evento"
+    },
+    "proyector_pantalla": {
+      "nombre": "Proyector + pantalla",
+      "precio_base": 35000,
+      "unidad": "evento"
+    },
+    "salon_aitana": {
+      "nombre": "Alquiler Salón Aitana Eventos",
+      "precio_base": 300000,
+      "unidad": "evento"
+    },
+    "traslado_equipo": {
+      "nombre": "Traslado de equipos (fuera de Villa Elisa)",
+      "precio_base": 15000,
+      "unidad": "viaje"
+    }
+  },
+  "combo_descuento_pct": 10
+}
