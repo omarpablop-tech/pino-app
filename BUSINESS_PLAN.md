@@ -8,13 +8,19 @@
 
 ## 0. Nota metodológica
 
-Instagram (`instagram.com`) está bloqueado por la red de este entorno de trabajo, así que no pude
-leer directamente `@pino.productions.ar` ni `@aitanaeventosok`. Por buscador confirmé que
-**Aitana Eventos** (`@aitanaeventosok`) es una cuenta activa y real: salón de fiestas en Villa Elisa,
-La Plata, ~1.062 seguidores y 273 posts al momento de esta investigación. De `@pino.productions.ar`
-no encontré rastro indexado en buscadores (es esperable si es una cuenta chica o nueva).
-Todo lo que sigue está construido sobre lo que vos me contaste directamente, no sobre datos
-inventados de redes.
+`instagram.com` está bloqueado por la red de este entorno de trabajo (no es un tema del link en
+particular, es el dominio entero) — no puedo leer `@pino.productions.ar` ni aunque me pases la URL
+directa. Por buscador confirmé que **Aitana Eventos** (`@aitanaeventosok`) es una cuenta activa y
+real (~1.062 seguidores y 273 posts al momento de esta investigación), pero de
+`@pino.productions.ar` no encontré rastro indexado (normal en una cuenta chica/nueva). Todo lo que
+sigue está construido sobre lo que vos me contaste directamente, no sobre datos inventados de
+redes. **Foco del negocio:** toda la energía de este plan va a **Pino Productions**, que es la
+marca que hay que construir de cero. Aitana Eventos ya está posicionada y bien administrada por
+tu cuenta — acá aparece solo cuando suma como combo, nunca como algo que haya que arrancar.
+
+Para que el Generador de Contenido de la app suene igual que tu cuenta real, pasame (texto o
+capturas) la bio actual de `@pino.productions.ar`, cuántos seguidores/posts tiene, y 3-4 posts
+recientes representativos. Con eso calibro tono, hashtags y el calendario de contenido.
 
 ---
 
@@ -50,14 +56,20 @@ funcionando y experiencia — lo que falta es **sistema**. Ese es el foco de est
 
 ## 2. Estructura legal y fiscal (Argentina)
 
-No puedo inscribirte yo — esto lo tenés que hacer vos (o un contador) con tu DNI/CUIT — pero
-te dejo el camino más corto y barato:
+Marcaste que **todavía no querés inscribir el monotributo hasta tener todo lo demás listo** — es
+una decisión válida: podés operar informalmente en esta etapa de armado (contenido, cotizador,
+CRM, primeros contactos) sin apuro. Dejo igual el camino para cuando decidas dar ese paso, para
+que no sea un obstáculo el día que factures el primer evento en serio:
 
-1. **Monotributo** (AFIP/ARCA) a tu nombre, categoría inicial baja. Es el régimen correcto para
-   arrancar sin capital: cuota mensual fija, factura simplificada, obra social incluida.
-   - Actividad sugerida: "Servicios de organización de fiestas y eventos" / "Servicios de DJ y
-     sonorización" (podés declarar más de una actividad).
-2. **Decidí la relación legal entre las dos marcas:**
+1. **Monotributo** (AFIP/ARCA) a tu nombre, categoría inicial baja, **cuando decidas activarlo**.
+   Es el régimen correcto para arrancar sin capital: cuota mensual fija, factura simplificada,
+   obra social incluida. No hay una única fecha "correcta" — lo razonable es inscribirte antes de
+   empezar a cobrar de forma regular y sostenida (no hace falta para el primer evento suelto de
+   prueba, sí para cuando ya sea un flujo constante).
+   - Actividad sugerida cuando lo hagas: "Servicios de organización de fiestas y eventos" /
+     "Servicios de DJ y sonorización" (podés declarar más de una actividad).
+2. **Decidí la relación legal entre las dos marcas** (esto podés definirlo ya, aunque el
+   monotributo espere):
    - Opción A (recomendada para arrancar): Pino Productions factura como monotributista tuyo.
      Aitana Eventos sigue como está (si ya factura, no la toques). Se venden como "combo
      comercial" sin fusionar la parte legal/fiscal todavía.
@@ -251,15 +263,19 @@ demanda es sostenida y previsible, no ocasional.
 ## 10. Checklist inmediato (próximas 2 semanas)
 
 - [ ] **Revocar y regenerar la API key de Gemini expuesta** en Google AI Studio (ver `README.md`).
-- [ ] Empezar el trámite de Monotributo (AFIP/ARCA) si todavía no lo tenés.
+- [ ] Pasarme la bio, seguidores/posts y 3-4 posts recientes de `@pino.productions.ar` (texto o
+      capturas) para calibrar el Generador de Contenido con tu voz real de marca.
 - [ ] Cargar precios reales en `config/precios.json`.
 - [ ] Correr la app localmente o subirla gratis a Streamlit Community Cloud (instrucciones en
       `README.md`).
-- [ ] Cargar en el CRM (`pages/3`) todas las consultas de clientes que tengas dando vueltas hoy
-      en la cabeza o en WhatsApp, aunque sean viejas — para tener el embudo real desde el día uno.
-- [ ] Definir el combo Salón + Producción como producto principal en el próximo post de ambas
-      cuentas.
+- [ ] Cargar en el CRM (`pages/3`) todas las consultas de clientes de Pino Productions que tengas
+      dando vueltas hoy en la cabeza o en WhatsApp, aunque sean viejas — para tener el embudo real
+      desde el día uno.
+- [ ] Publicar el primer contenido sistemático en `@pino.productions.ar` generado con la app
+      (recap, detrás de escena, o promoción de fecha libre).
 - [ ] Hablar con tu socio y dejar por escrito el reparto de costos/ganancias de la camioneta.
+- [ ] Monotributo: **sin apuro por ahora**, según definiste — retomalo cuando el resto esté
+      funcionando y empieces a cobrar de forma regular (ver sección 2).
 
 ---
 
